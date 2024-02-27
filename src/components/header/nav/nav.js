@@ -142,13 +142,13 @@ const Nav = (props) => {
                     </div>
                   </li>
                   <li className="list-inline-item">
-                    <Button>
-                      <Link>Rewards</Link>
+                    <Button onClick={props.closeNav}>
+                      <Link to="/rewards">Rewards</Link>
                     </Button>
                   </li>
                   <li className="list-inline-item">
-                    <Button>
-                      <Link>Contact</Link>
+                    <Button onClick={props.closeNav}>
+                      <Link to="/contact">Contact</Link>
                     </Button>
                   </li>
                 </ul>

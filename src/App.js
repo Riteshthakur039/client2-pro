@@ -19,6 +19,8 @@ import Loader from './assets/images/load.gif';
 
 import data from './data';
 import About from './pages/About';
+import GavaCoins from './pages/GavaCoins/GavaCoins';
+import ContactForm from './pages/Contactform/ContactForm';
 
 const MyContext = createContext();
 
@@ -164,6 +166,8 @@ function App() {
           <Route exact={true} path="/signUp" element={<SignUp />} />
           <Route exact={true} path="*" element={<NotFound />} />
           <Route exact={true} path="/about" element={<About />} />
+          <Route exact={true} path="/rewards" element={<GavaCoins />} />
+          <Route exact={true} path="/contact" element={<ContactForm />} />
         </Routes>
        <Footer/>
       </MyContext.Provider>

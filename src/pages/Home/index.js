@@ -64,7 +64,7 @@ const Home = (props) => {
     prodData.length !== 0 &&
       prodData.map((item, index) => {
         item.items.map((item_, index_) => {
-          if (item_.cat_name === activeTab) {
+          if (item_.cat_name === "Ghee & Oils") {
             {
               item_.products.length !== 0 &&
                 item_.products.map((product) => {
@@ -90,7 +90,7 @@ const Home = (props) => {
   useEffect(() => {
     prodData.length !== 0 &&
       prodData.map((item) => {
-        if (item.cat_name === "Electronics") {
+        if (item.cat_name === "groceries") {
           item.items.length !== 0 &&
             item.items.map((item_) => {
               item_.products.length !== 0 &&
