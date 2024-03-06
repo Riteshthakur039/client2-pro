@@ -17,10 +17,11 @@ import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import Loader from './assets/images/load.gif';
 
-import data from './data';
+import data from './data/data';
 import About from './pages/About';
 import GavaCoins from './pages/GavaCoins/GavaCoins';
 import ContactForm from './pages/Contactform/ContactForm';
+import AdminPanel from './pages/AdminPanel';
 
 const MyContext = createContext();
 
@@ -170,6 +171,7 @@ function App() {
           <Route exact={true} path="/contact" element={<ContactForm />} />
         </Routes>
        <Footer/>
+       <AdminPanel />
       </MyContext.Provider>
     </BrowserRouter>
   );

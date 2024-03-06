@@ -89,8 +89,9 @@ const Cart = () => {
                 <div className="left">
                   <h1 className="hd mb-0">Your Cart</h1>
                   <p>
-                    There are <span className="text-g">{context.cartItems.length}</span> products in your
-                    cart
+                    There are{" "}
+                    <span className="text-g">{context.cartItems.length}</span>{" "}
+                    products in your cart
                   </p>
                 </div>
 
